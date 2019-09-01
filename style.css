@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Manjari", sans-serif;
+  color: #1a1a47;
+  font-size: 18px;
+}
+
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 8px;
+  padding: 0 12px;
+  margin-top: 80px;
+}
+
+.brand {
+  font-size: 24px;
+}
+
+img {
+  border-radius: 3px;
+}
+
+/* NAVBAR */
+.nav-item {
+  color: #9c9c9c;
+  text-decoration: none;
+  margin-left: 24px;
+  font-size: 20px;
+}
+
+.nav-item:hover {
+  color: #666;
+}
+
+.nav-item.active {
+  color: #1a1a47;
+}
+
+nav > * {
+  background: transparent;
+  top: 0;
+}
+
+.nav-wrap {
+  display: block;
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+  padding: 24px 0 24px 0;
+}
+
+.nav-content-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 12px;
+  align-content: center;
+  /*ph3 ph4-ns pv2*/
+}
+
+.nav-white > * {
+  background-color: white;
+  box-shadow: 0 3px 6px rgba(150, 0, 0, 0.2);
+}
+
+.navbar-link {
+  margin-left: 1rem;
+  font-weight: 500;
+  color: red;
+}
+
+.nav-hamburger-content {
+  display: none;
+}
+
+.nav-sm {
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: justify-center items-center pb3; */
+}
+
+.nav-hamburger-button {
+  padding: 0.75rem;
+  border-radius: 100%;
+  display: flex;
+  border: 0;
+  outline: 0;
+  background: white;
+  position: relative;
+  top: -12px;
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 60em) {
+  .nav-sm {
+    display: none !important;
+  }
+  .nav-hamburger-content {
+    display: block;
+  }
+
+  .nav-wrap {
+    padding: 64px 0 48px 0;
+  }
+
+  .wrap {
+    margin-top: 148px;
+  }
+
+  .brand {
+    font-size: 32px;
+  }
+}
+
+.nav-content {
+  opacity: 0;
+  transition: all 0.15s ease-in-out;
+  overflow: hidden;
+  transform: scaleY(0);
+  transform-origin: top;
+  display: flex;
+  text-align: right;
+  background-color: white;
+  padding: 12px;
+}
+
+.nav-open .nav-content {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.nav-content .nav-item {
+  padding: 6px 0;
+}
