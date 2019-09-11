@@ -7,6 +7,10 @@ html {
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+}
+
 *,
 *:before,
 *:after {
@@ -20,7 +24,7 @@ body {
 }
 
 .wrap {
-  max-width: 1200px;
+  max-width: 800px;
   margin: 0 auto;
   margin-top: 8px;
   padding: 0 12px;
@@ -29,10 +33,29 @@ body {
 
 .brand {
   font-size: 24px;
+  padding-top: 3px;
 }
 
 img {
-  border-radius: 3px;
+  border-radius: 4px;
+}
+
+.art-wrap {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.art-wrap p {
+  font-size: 28px;
+  margin-top: 28px;
+  text-align: center;
+  font-weight: 100;
+}
+
+.art-wrap img {
+  margin: 0 auto;
 }
 
 /* NAVBAR */
@@ -66,13 +89,12 @@ nav > * {
 }
 
 .nav-content-wrap {
-  max-width: 1200px;
+  max-width: 800px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   padding: 0 12px;
   align-content: center;
-  /*ph3 ph4-ns pv2*/
 }
 
 .nav-white > * {
@@ -93,7 +115,6 @@ nav > * {
 .nav-sm {
   flex-direction: column;
   justify-content: center;
-  /* align-items: justify-center items-center pb3; */
 }
 
 .nav-hamburger-button {
@@ -127,6 +148,15 @@ nav > * {
 
   .brand {
     font-size: 32px;
+    padding-top: 0;
+  }
+
+  .nav-content-wrap {
+    align-items: baseline;
+  }
+
+  .art-wrap {
+    margin-bottom: 80px;
   }
 }
 
