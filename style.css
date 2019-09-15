@@ -19,7 +19,7 @@ img {
 
 body {
   font-family: "Manjari", sans-serif;
-  color: #1a1a47;
+  color: #262631;
   font-size: 18px;
 }
 
@@ -29,6 +29,7 @@ body {
   margin-top: 8px;
   padding: 0 12px;
   margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .brand {
@@ -71,7 +72,7 @@ img {
 }
 
 .nav-item.active {
-  color: #1a1a47;
+  color: #262631;
 }
 
 nav > * {
@@ -86,6 +87,7 @@ nav > * {
   z-index: 999;
   top: 0;
   padding: 24px 0 24px 0;
+  height: 0;
 }
 
 .nav-content-wrap {
@@ -170,13 +172,64 @@ nav > * {
   text-align: right;
   background-color: white;
   padding: 12px;
+  box-shadow: 0 4px 8px -8px black;
+  pointer-events: none;
 }
 
 .nav-open .nav-content {
   opacity: 1;
   transform: scaleY(1);
+  pointer-events: initial;
 }
 
 .nav-content .nav-item {
   padding: 6px 0;
+}
+
+/* CV */
+
+h3 {
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.line {
+  display: flex;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.time {
+  font-weight: 700;
+  min-width: 64px;
+  /* text-align: right; */
+  margin-right: 8px;
+  flex: 0 0 50px;
+}
+
+/* Contact */
+.form-wrap {
+  max-width: 440px;
+  /* margin: 0 auto; */
+}
+
+input,
+textarea {
+  background: whitesmoke;
+  border: 0;
+  padding: 12px 16px;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-bottom: 16px;
+  width: 100%;
+  font-family: "Manjari", sans-serif;
+}
+
+input[type="submit"] {
+  background-color: #262631;
+  color: white;
+}
+
+.contact-preamble {
+  margin-bottom: 24px;
 }

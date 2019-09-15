@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Contact | Mie Vaale Noddeland</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Manjari:100,400,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav data-main-nav class="nav-wrap">
+      <div>
+        <div class="nav-content-wrap">
+          <div class="brand">Mie Vaale Noddeland</div>
+
+          <div class="nav-hamburger-content">
+            <a href="/" class="nav-item">Photos</a>
+            <a href="/cv.html" class="nav-item">CV</a>
+            <a href="/contact.html" class="nav-item active">Contact</a>
+          </div>
+
+          <div class="nav-sm">
+            <button data-nav-button class="nav-hamburger-button">
+              <img src="img/icon-menu.svg" alt="Main menu" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="nav-sm nav-content">
+        <a href="/" class="nav-item">Photos</a>
+        <a href="/cv.html" class="nav-item">CV</a>
+        <a href="/contact.html" class="nav-item active">Contact</a>
+      </div>
+    </nav>
+    <div class="wrap">
+      <div class="form-wrap">
+        <p class="contact-preamble">
+          Got questions? Send an email to mie@noddeland.no, call +4741454141 or
+          use the contact form below.
+        </p>
+        <form action="https://formspree.io/mie@noddeland.no" method="POST">
+          <h3>Contact form</h3>
+
+          <input type="text" name="name" placeholder="Name" />
+          <input type="text" name="email" placeholder="Email" />
+          <textarea
+            name="content"
+            cols="30"
+            rows="10"
+            placeholder="Content"
+          ></textarea>
+          <input type="submit" value="Send" />
+        </form>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
